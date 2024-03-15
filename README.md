@@ -36,6 +36,17 @@ Heure arrivée: 14:31
     Utilisez la documentation de mariadb
     Utilisez des ressources pour vous aidez (et pas ChatGPT)
 
+## Générer un nouveau jeu d'essai
+1. Connectez vous à la base de données
+mysql -u votre_utilisateur -p votre_base_de_donnees
+
+2. Exécuter la procédure stockée Jeu_essai
+``` sql
+CALL Jeu_essai("YYYY-MM-DD");
+```
+
+
+
 ## Petit lexique du jargon du monde de l'aviation
 
 - Une rotation: un aller/retour vers une destination
