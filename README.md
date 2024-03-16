@@ -1,18 +1,19 @@
 # Présentation
 
-Pour ce travail nous allons utiliser la base de données d'une compagnie aérienne fictive. Cette base de données a pour fonction de gérer et centraliser les informations nécessaires à l'activité de la compagnie.
+Ce dépôt contient la base de données d'une compagnie aérienne fictive où sont stocké les données utiles à ses activités opérationnelles. Elle a pour but de vous entrainer au requêtage SQL.
+
 ![image](https://github.com/ornech/DB_airline/assets/101867500/115efdc3-0f13-4a47-a8f6-b4ea70e2fe0d)
 
-Notre compagnie aérienne fictive réalise plusieurs rotations au départ de Paris à destination de :
+La compagnie aérienne fictive en question réalise quotidienneùent plusieurs rotations au départ de Paris à destination de :
 1. Ajaccio (3 aller/retour par jour)
 2. Zurich (4 aller/retour par jour)
 3. Rome (2 aller/retour par jour)
 
-Cette base de données contient plusieurs mois d'activité de la compagnie aérienne qui inclus ( billets vendus, vols réalisés, avions utilisés, équipage pour un vol, etc ...)
+Cette base de données :
+ - Contient plusieurs mois d'activité de la compagnie aérienne qui inclus ( billets vendus, vols réalisés, avions utilisés, équipage pour un vol, etc ...)
+ - A été conçue pour respecter les "règles métier" d'une compagnie aérienne, c'est à dire les contraintes liées à son activité opérationnelle (par exemple un siège pour un vol précis ne peut pas être assigner une seconde fois sur ce même vol).
 
-Cette base de données a été conçue pour respecter au plus près les "règles métier" d'une compagnie aérienne, c'est à dire les contraintes liées à son activité opérationnelle.
-
-A titre d'exemple, voici ce que vous pouvez générer  comme résultat à partir de cette base de données; Exemple d'un billet d'avion existant:
+A titre d'exemple, voici ce que vous pouviez générer comme résultats :
 
 Nom: Eskriet
 Prenom: Loïca
@@ -24,7 +25,7 @@ Date: 12/02/2024
 Heure décollage: 13:00
 Heure arrivée: 14:31
 
-## Information serveur de base de données
+## Information de connection aux serveurs de base de données
 
 - IP (SIO1): 172.168.254.188
 - IP (SIO2): 172.168.254.167
@@ -33,6 +34,11 @@ Heure arrivée: 14:31
   - Pour les SIO1: Votre prénom sans accent  et avec la première lettre du prénom en majuscule
   - Pour les SIO2: "SIO2-" suivi de votre prénom sans accent et avec la première lettre du prénom en majuscule
 - mot de passe: votre date de naissance au format JJMMAAAA
+
+  Pour les SIO1, vous possédez d'une base de données commune avec des droits limités au SELECT.
+
+  Pour les SIO2, vous disposez d'une base de données personnel avec des droits étendus afin de modifier ou créer des tables, procédures stockées, déclencheurs ou fonctions.
+
 
 ## Avant de commencer
 Connectez-vous au serveur
@@ -93,3 +99,4 @@ mysql -u votre_utilisateur -p votre_base_de_donnees
 ``` sql
 CALL Jeu_essai("YYYY-MM-DD");
 ```
+Notez que la date transmise à la procédure sera la date du premier vol de votre jeu d'essai. Les vols et billets seront généré automatiquement de cette date jusqu'à la date du jour.
