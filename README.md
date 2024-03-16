@@ -25,27 +25,29 @@ Heure arrivée: 14:31
 
 ## Information serveur de base de données
 
-- IP: 172.168.254.188
-- user : Votre prénom avec accent si nécessaire et avec la permière lettre en majuscule
+- IP (SIO1): 172.168.254.188
+- IP (SIO2): 172.168.254.167
+
+- user :
+  - Pour les SIO1: Votre prénom sans accent  et avec la première lettre du prénom en majuscule
+  - Pour les SIO2: "SIO2-" suivi de votre prénom sans accent et avec la première lettre du prénom en majuscule
 - mot de passe: votre date de naissance au format JJMMAAAA
 
 ## Avant de commencer
-
-    Familiarisez-vous avec cette base de données
-    Relisez vos notes
-    Utilisez la documentation de mariadb
-    Utilisez des ressources pour vous aidez (et pas ChatGPT)
-
-## Générer un nouveau jeu d'essai
-1. Connectez vous à la base de données
-mysql -u votre_utilisateur -p votre_base_de_donnees
-
-2. Exécuter la procédure stockée Jeu_essai
-``` sql
-CALL Jeu_essai("YYYY-MM-DD");
+Connectez-vous au serveur
+``` shell
+mysql -u <VOTRE UTILISATEUR> -p
 ```
 
-
+- Sélectionnez votre base de données
+``` sql
+SHOW DATABASE;
+USE <NOM DE LA BASE DE DONNEES>;
+```
+- Familiarisez-vous avec cette base de données
+- Relisez vos notes
+- Utilisez la documentation de mariadb
+- Utilisez des ressources pour vous aidez (et pas ChatGPT)
 
 ## Petit lexique du jargon du monde de l'aviation
 
@@ -80,3 +82,12 @@ CALL Jeu_essai("YYYY-MM-DD");
 21. Quel est le temps de vol moyen des équipages pour le mois de Février ?
 22. Quel est le temps de repos moyen des équipages ?
 23. Affichez les vols avec un nombre de passagers supérieur à la moyenne.
+
+### Générer un nouveau jeu d'essai
+1. Connectez vous à la base de données
+mysql -u votre_utilisateur -p votre_base_de_donnees
+
+2. Exécuter la procédure stockée Jeu_essai
+``` sql
+CALL Jeu_essai("YYYY-MM-DD");
+```
