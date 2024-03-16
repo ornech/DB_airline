@@ -1,6 +1,7 @@
 # Présentation
 
 Pour ce travail nous allons utiliser la base de données d'une compagnie aérienne fictive. Cette base de données a pour fonction de gérer et centraliser les informations nécessaires à l'activité de la compagnie.
+![image](https://github.com/ornech/DB_airline/assets/101867500/115efdc3-0f13-4a47-a8f6-b4ea70e2fe0d)
 
 Notre compagnie aérienne fictive réalise plusieurs rotations au départ de Paris à destination de :
 1. Ajaccio (3 aller/retour par jour)
@@ -56,6 +57,7 @@ USE <NOM DE LA BASE DE DONNEES>;
 - OPL: Officier pilote de ligne, un second pilote
 - CDC: Chef de cabine
 - PNC: Hotesse
+![image](https://github.com/ornech/DB_airline/assets/101867500/01b3ddc5-b34e-48e0-98a3-bc033ed65f47)
 
 # Exercices
 
