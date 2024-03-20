@@ -27,8 +27,8 @@ Heure arrivée: 14:31
 
 ## Information de connection aux serveurs de base de données
 
-- IP (SIO1): 172.168.254.188
-- IP (SIO2): 172.168.254.167
+- IP (SIO1): 172.16.254.188
+- IP (SIO2): 172.16.254.167
 
 - user :
   - Pour les SIO1: Votre prénom sans accent  et avec la première lettre du prénom en majuscule
