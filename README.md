@@ -69,17 +69,17 @@ USE <NOM DE LA BASE DE DONNEES>;
 
 1. Afficher la liste des immatriculations et le modèle d'avion.
 2. Comptez le nombre d'aéroports .
-3.Afficher le nombre de sièges en la classe « business » pour chaque avion.
+3. Afficher le nombre de sièges en la classe « business » pour l'avion de votre choix.
 4. Quel a été le vol qui a duré le plus longtemps.
-5. Affichez pour le vol de votre choix, la liste des passagers.
+5. Affichez pour le vol de votre choix, la liste des passagers (Nom, Prénom et date de naissance du passager).
 6. Pour le vol de votre choix, afficher le CDB et le N° de vol.
-7.Pour le vol de votre choix, afficher l'immatriculation de l'avion utilisé et la ville de destination
-8.Pour le vol de votre choix, afficher le numéro du siège (1B par exemple) et le nom du passager
-9. Affichez le pilote (CDB ou OPL) qui a effectué le plus de vols.
-10. Pour le vol de votre choix afficher le nombre de passagers en classe Eco et en classe Business .
+7. Pour le vol de votre choix, afficher l'immatriculation de l'avion utilisé et la ville de destination
+8. Pour le vol de votre choix, afficher le numéro du siège (1B par exemple) et le nom du passager
+9. Affichez le ou les pilotes (CDB ou OPL) qui ont effectués le plus grand nombres de vols.
+10. Pour le vol de votre choix, affichez le nombre de passagers en classe Eco et en classe Business .
 11. Calculer le nombre moyen de passagers
 12. Déterminez le nombre de vol moyen d’un naviguant.
-13. Trouver les 5 employés les plus sollicités (ayant le plus de vols à leur actif
+13. Trouver les 5 employés les plus sollicités (ayant le plus de vols à leur actif)
 14. Affichez la liste des vols à destination d’Ajaccio au mois de Janvier.
 15. Quel est le temps de vol moyen des équipages pour le mois de Février
 16. Déterminez le taux de remplissage des 3 lignes
@@ -89,7 +89,6 @@ USE <NOM DE LA BASE DE DONNEES>;
 20. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
 21. Quel est le temps de vol moyen des équipages pour le mois de Février ?
 22. Quel est le temps de repos moyen des équipages ?
-23. Affichez les vols avec un nombre de passagers supérieur à la moyenne.
 
 ### Générer un nouveau jeu d'essai
 1. Connectez vous à la base de données
@@ -100,3 +99,22 @@ mysql -u votre_utilisateur -p votre_base_de_donnees
 CALL Jeu_essai("YYYY-MM-DD");
 ```
 Notez que la date transmise à la procédure sera la date du premier vol de votre jeu d'essai. Les vols et billets seront généré automatiquement de cette date jusqu'à la date du jour.
+
+### Importer cette base de données
+1. Récupérer le dump de la base de données
+2. Connectez vous à la base de données
+mysql -u votre_utilisateur -p
+3. Créer une base de données
+``` sql
+CREATE DATABASE airline;
+EXIT;
+```
+4a. Importez le fichier dump
+``` bash
+mysql -u user -h localhost -p airline < dump-airline_dev-XXXXXXXXXX.sql
+```
+
+4b. Si vous utilisez le compte root de mariadb
+``` bash
+sudo mysql -p airline < dump-airline_dev-XXXXXXXXXX.sql
+```
