@@ -115,6 +115,14 @@ CALL Jeu_essai("YYYY-MM-DD");
 Notez que la date transmise à la procédure sera la date du premier vol de votre jeu d'essai. Les vols et billets seront générés automatiquement de cette date jusqu'à la date du jour.
 
 ### Importez cette base de données
+#### A partir de Dbeaver
+1. Créez une base de données
+2. Faite un clique droit sur votre nouvelle base de données
+3. Outils -> Restore Database
+4. Importer le dump de ce dépot
+![image](https://github.com/ornech/DB_airline/assets/101867500/3c81f4c0-1bc7-46a3-a1b1-0ec63eeb29e2)
+
+#### Depuis un terminal
 1. Récupérer le dump de la base de données
 2. Connectez vous à la base de données
 mysql -u votre_utilisateur -p
