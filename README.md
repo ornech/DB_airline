@@ -39,19 +39,10 @@ Heure arrivée: 14:31
 
   Pour les SIO2, vous disposez d'une base de données personnelle avec des droits étendus afin de modifier ou créer des tables, procédures stockées, déclencheurs ou fonctions.
 
-
 ## Avant de commencer
-Connectez-vous au serveur
-``` shell
-mysql -u <VOTRE UTILISATEUR> -p
-```
+- Familiarisez-vous avec cette base de données  
+ ![image](https://github.com/ornech/DB_airline/assets/101867500/0b9ac547-fcc4-4cd5-9d4b-5be35cb35b10)
 
-- Sélectionnez votre base de données
-``` sql
-SHOW DATABASE;
-USE <NOM DE LA BASE DE DONNEES>;
-```
-- Familiarisez-vous avec cette base de données
 - Relisez vos notes
 - Utilisez la documentation de mariadb
 - Utilisez des ressources pour vous aider (et pas ChatGPT)
