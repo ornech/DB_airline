@@ -65,32 +65,46 @@ USE <NOM DE LA BASE DE DONNEES>;
 - PNC: Hotesse
 ![image](https://github.com/ornech/DB_airline/assets/101867500/01b3ddc5-b34e-48e0-98a3-bc033ed65f47)
 
-# Exercices
+## Exercices "requêtes "
 
 1. Afficher la liste des immatriculations et le modèle d'avion.
 2. Comptez le nombre d'aéroports .
 3. Afficher le nombre de sièges en la classe « business » pour l'avion de votre choix.
 4. Quel a été le vol qui a duré le plus longtemps.
-5. Affichez pour le vol de votre choix, la liste des passagers (Nom, Prénom et date de naissance du passager).
-6. Pour le vol de votre choix, afficher le CDB et le N° de vol.
-7. Pour le vol de votre choix, afficher l'immatriculation de l'avion utilisé et la ville de destination
-8. Pour le vol de votre choix, afficher le numéro du siège (1B par exemple) et le nom du passager
-9. Affichez le ou les pilotes (CDB ou OPL) qui ont effectués le plus grand nombres de vols.
-10. Pour le vol de votre choix, affichez le nombre de passagers en classe Eco et en classe Business .
-11. Calculer le nombre moyen de passagers
-12. Déterminez le nombre de vol moyen d’un naviguant.
-13. Trouver les 5 employés les plus sollicités (ayant le plus de vols à leur actif)
-14. Affichez la liste des vols à destination d’Ajaccio au mois de Janvier.
-15. Quel est le temps de vol moyen des équipages pour le mois de Février
-16. Déterminez le taux de remplissage des 3 lignes
-17. Affichez les vols avec un nombre de passagers supérieur à la moyenne
-18. Affichez la liste des vols à destination d’Ajaccio au mois de Janvier
-19. Affichez le temps de vol des avions pour les mois de janvier et février
-20. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
-21. Quel est le temps de vol moyen des équipages pour le mois de Février ?
-22. Quel est le temps de repos moyen des équipages ?
 
-### Générer un nouveau jeu d'essai
+
+## Exercices "Jointures"
+1. Affichez pour le vol de votre choix, la liste des passagers (Nom, Prénom et date de naissance du passager).
+2. Pour le vol de votre choix, afficher le CDB et le N° de vol.
+3. Pour le vol de votre choix, afficher l'immatriculation de l'avion utilisé et la ville de destination
+4. Pour le vol de votre choix, afficher le numéro du siège (1B par exemple) et le nom du passager
+5. Pour le vol de votre choix quels ont les sièges qui ont été innocupées
+
+## Exercices "sous-requêtes"
+1. Affichez le ou les pilotes (CDB ou OPL) qui ont effectués le plus grand nombres de vols au mois en décembre 2023.
+2. Pour le vol de votre choix, affichez le nombre de passagers  classe Business.
+3. Calculer le nombre moyen de passagers à destination de Rome.
+5. Déterminez le nombre de vol moyen d’un naviguant.
+6. Trouver les 5 employés les plus sollicités (ayant le plus de vols à leur actif)
+7. Quel est le temps de vol moyen des équipages pour le mois de Février
+8. Déterminez le taux de remplissage des 3 lignes
+9. Affichez les vols avec un nombre de passagers supérieur à la moyenne
+10. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
+
+## Excercice "Vues"
+1. Fait une vue qui affiche le carnet de vol des avions
+2. Fait une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
+2. Faite une vue qui affiche les
+
+## Exercice "Triggers"
+1. Faite un trigger sur la table Billets qui vérifie si une modification de siège est possible pour un passager ?
+
+## Exercice "Procédures stockées"
+1. Faite une procédure capable de programmer un nouveau vol (décollage à une date ultérieur) ainsi que son retour. Cette prosédure doit remplir tous les champs.
+2. Modifiez cette procédure pour que seul les équipages yant le moins volé ce mois ci soit affecté à ce vol.
+
+
+# Générer un nouveau jeu d'essai
 1. Connectez vous à la base de données
 mysql -u votre_utilisateur -p votre_base_de_donnees
 
