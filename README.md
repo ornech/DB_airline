@@ -79,6 +79,7 @@ USE <NOM DE LA BASE DE DONNEES>;
 3. Pour le vol de votre choix, afficher l'immatriculation de l'avion utilisé et la ville de destination
 4. Pour le vol de votre choix, afficher le numéro du siège (1B par exemple) et le nom du passager
 5. Pour le vol de votre choix quels ont les sièges qui ont été innocupées
+6. Affichez les passagers qui n'ont pas volé.
 
 ## Exercices "sous-requêtes"
 1. Affichez le ou les pilotes (CDB ou OPL) qui ont effectués le plus grand nombres de vols au mois en décembre 2023.
@@ -94,7 +95,6 @@ USE <NOM DE LA BASE DE DONNEES>;
 ## Excercice "Vues"
 1. Fait une vue qui affiche le carnet de vol des avions
 2. Fait une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
-2. Faite une vue qui affiche les
 
 ## Exercice "Triggers"
 1. Faite un trigger sur la table Billets qui vérifie si une modification de siège est possible pour un passager ?
