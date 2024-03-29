@@ -1,6 +1,6 @@
 # Présentation
 
-Ce dépôt contient la base de données d'une compagnie aérienne fictive où sont stocké les données utiles à ses activités opérationnelles. Elle a pour but de vous entrainer au requêtage SQL.
+Ce dépôt contient la base de données d'une compagnie aérienne fictive où sont stockées les données utiles à ses activités opérationnelles. Elle a pour but de vous entrainer au requêtage SQL.
 
 ![image](https://github.com/ornech/DB_airline/assets/101867500/115efdc3-0f13-4a47-a8f6-b4ea70e2fe0d)
 
