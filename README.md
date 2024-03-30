@@ -57,7 +57,7 @@ Heure arrivée: 14:31
 ![image](https://github.com/ornech/DB_airline/assets/101867500/01b3ddc5-b34e-48e0-98a3-bc033ed65f47)
 
 ## Exercices "requêtes "
-> ℹ️ Pour vous aider
+> ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/select/
 > 
 1. Affichez la liste des immatriculations et le modèle d'avion.
@@ -98,13 +98,22 @@ Heure arrivée: 14:31
 10. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
 
 ## Excercice "Vues"
+> ℹ️ Pour vous aider
+> https://mariadb.com/kb/en/create-view/  
+
 1. Faites une vue qui affiche le carnet de vol des avions
 2. Faites une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
 
 ## Exercice "Triggers"
+> ℹ️ Pour vous aider
+> https://mariadb.com/kb/en/create-trigger/
+
 1. Faite un trigger sur la table Billets qui vérifie si une modification de siège est possible pour un passager 
 
 ## Exercice "Procédures stockées"
+> ℹ️ Pour vous aider  
+> https://mariadb.com/kb/en/create-procedure/
+
 1. Faites une procédure capable de programmer un nouveau vol (décollage à une date ultérieure) ainsi que son retour. Cette procédure doit remplir tous les champs.
 2. Modifiez cette procédure pour que seuls les équipages ayant le moins volé ce mois-ci soit affecté à ce vol.
 
