@@ -81,7 +81,7 @@ Heure arrivée: 14:31
 6. Affichez les passagers qui n'ont pas volé.
 
 ## Exercices "sous-requêtes"
-> ℹ️ Pour vous aider
+> ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/subqueries-scalar-subqueries/  
 > https://mariadb.com/kb/en/subqueries-row-subqueries/  
 > https://mariadb.com/kb/en/subqueries-in-a-from-clause/  
