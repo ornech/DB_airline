@@ -57,7 +57,9 @@ Heure arrivée: 14:31
 ![image](https://github.com/ornech/DB_airline/assets/101867500/01b3ddc5-b34e-48e0-98a3-bc033ed65f47)
 
 ## Exercices "requêtes "
-
+> ℹ️ Pour vous aider
+> https://mariadb.com/kb/en/select/
+> 
 1. Affichez la liste des immatriculations et le modèle d'avion.
 2. Comptez le nombre d'aéroports .
 3. Affichez le nombre de sièges en classe « business » pour l'avion de votre choix.
@@ -65,6 +67,12 @@ Heure arrivée: 14:31
 
 
 ## Exercices "Jointures"
+> ℹ️ Pour vous aidez  
+> https://mariadb.com/kb/en/joining-tables-with-join-clauses/  
+> https://mariadb.com/kb/en/more-advanced-joins/
+> https://mariadb.com/kb/en/group-by/  
+
+
 1. Affichez pour le vol de votre choix, la liste des passagers (N° de vol, Nom, Prénom et date de naissance du passager).
 2. Pour le vol de votre choix, affichez le CDB et le N° de vol.
 3. Pour le vol de votre choix, affichez l'immatriculation de l'avion utilisé et la ville de destination
@@ -73,6 +81,12 @@ Heure arrivée: 14:31
 6. Affichez les passagers qui n'ont pas volé.
 
 ## Exercices "sous-requêtes"
+> ℹ️ Pour vous aider
+> https://mariadb.com/kb/en/subqueries-scalar-subqueries/  
+> https://mariadb.com/kb/en/subqueries-row-subqueries/  
+> https://mariadb.com/kb/en/subqueries-in-a-from-clause/  
+> https://mariadb.com/kb/en/in/  
+
 1. Affichez le ou les pilotes (CDB ou OPL) qui ont effectué le plus grand nombre de vols en décembre 2023.
 2. Pour le vol de votre choix, affichez le nombre de passagers en classe Business.
 3. Calculez le nombre moyen de passagers par vol à destination de Rome.
