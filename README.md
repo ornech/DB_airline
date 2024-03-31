@@ -105,10 +105,10 @@ Heure arrivée: 14:31
 2. Faites une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
 
 ## Exercice "Triggers"
-> ℹ️ Pour vous aider
-> https://mariadb.com/kb/en/create-trigger/
-> https://mariadb.com/kb/en/signal/
-> Pour les erreurs personnalisées, le SQLSTATE recommandé est « 45000 ».
+> ℹ️ Pour vous aider  
+> https://mariadb.com/kb/en/create-trigger/  
+> https://mariadb.com/kb/en/signal/  
+> Pour les erreurs personnalisées, le SQLSTATE recommandé est « 45000 ».  
 
 1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifie si le siège modifié est disponible. Si c'est le cas le chagement est validé et le siège initial est rendu disponible. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
