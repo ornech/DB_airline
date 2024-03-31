@@ -107,15 +107,19 @@ Heure arrivée: 14:31
 ## Exercice "Triggers"
 > ℹ️ Pour vous aider
 > https://mariadb.com/kb/en/create-trigger/
+> https://mariadb.com/kb/en/signal/
+> Pour les erreurs personnalisées, le SQLSTATE recommandé est « 45000 ».
 
-1. Faite un trigger sur la table Billets qui vérifie si une modification de siège est possible pour un passager 
+1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifie si le siège modifié est disponible. Si c'est le cas le chagement est validé et le siège initial est rendu disponible. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
+2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
 
 ## Exercice "Procédures stockées"
 > ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/create-procedure/
 
-1. Faites une procédure capable de programmer un nouveau vol (décollage à une date ultérieure) ainsi que son retour. Cette procédure doit remplir tous les champs.
-2. Modifiez cette procédure pour que seuls les équipages ayant le moins volé ce mois-ci soit affecté à ce vol.
+1. Faites une procédure qui affiche la liste des passagers (Nom, prénom, siège (Allée et rangée) et date de naissance). Le n° de vol sera donné en argument.
+3. Faites une procédure capable de programmer un nouveau vol (décollage à une date ultérieure) ainsi que son retour. L'aéroport de départ, destination ainsi que la date et l'heure seront donnée en arguments. (L'assignation des équipages se fera ultérieurement).
+
 
 
 # Générez un nouveau jeu d'essai
