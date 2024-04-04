@@ -99,9 +99,9 @@ Heure arrivée: 14:31
 
 ## Exercices "Vues"
 > ℹ️ Pour vous aider
-> https://mariadb.com/kb/en/create-view/  
+> https://mariadb.com/kb/en/create-view/
 
-1. Faites une vue qui affiche le carnet de vol des avions
+1. Créez une vue qui affiche le carnet de vol des avions (chaque ligne devra afficher, l'immatriculation de l'avion, son modèle, l'aéroport de départ, la date et heure de décollage, l'aéroport de destination la date et l'heure d'arrivée, le temps de vols)
 2. Faites une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
 
 ## Exercices "Triggers"
@@ -110,7 +110,7 @@ Heure arrivée: 14:31
 > https://mariadb.com/kb/en/signal/  
 > Pour les erreurs personnalisées, le SQLSTATE recommandé est « 45000 ».  
 
-1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifie si le siège modifié est disponible. Si c'est le cas le chagement est validé et le siège initial est rendu disponible. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
+1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifier si le siège modifié est disponible. Si c'est le cas le changement est enregistré. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
 
 ## Exercices "Procédures stockées"
