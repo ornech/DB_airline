@@ -59,7 +59,7 @@ Heure arrivée: 14:31
 ## Exercices "requêtes "
 > ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/select/
-> 
+>
 1. Affichez la liste des immatriculations et le modèle d'avion.
 2. Comptez le nombre d'aéroports .
 3. Affichez le nombre de sièges en classe « business » pour l'avion de votre choix.
@@ -97,14 +97,14 @@ Heure arrivée: 14:31
 9. Affichez les vols avec un nombre de passagers supérieur à la moyenne
 10. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
 
-## Excercice "Vues"
+## Exercices "Vues"
 > ℹ️ Pour vous aider
 > https://mariadb.com/kb/en/create-view/  
 
 1. Faites une vue qui affiche le carnet de vol des avions
 2. Faites une vue qui affiche le carnet de vol des naviguants (nom, prénom, fonction, date (uniquement) du vol, n° de vol, aéroport de départ, aéroport de destination, temps de vol)
 
-## Exercice "Triggers"
+## Exercices "Triggers"
 > ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/create-trigger/  
 > https://mariadb.com/kb/en/signal/  
@@ -113,12 +113,12 @@ Heure arrivée: 14:31
 1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifie si le siège modifié est disponible. Si c'est le cas le chagement est validé et le siège initial est rendu disponible. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
 
-## Exercice "Procédures stockées"
+## Exercices "Procédures stockées"
 > ℹ️ Pour vous aider  
 > https://mariadb.com/kb/en/create-procedure/
 
 1. Faites une procédure qui affiche la liste des passagers (Nom, prénom, siège (Allée et rangée) et date de naissance). Le n° de vol sera donné en argument.
-3. Faites une procédure capable de programmer un nouveau vol (décollage à une date ultérieure) ainsi que son retour. L'aéroport de départ, destination ainsi que la date et l'heure seront donnée en arguments. (L'assignation des équipages se fera ultérieurement).
+2. Faites une procédure capable de programmer un nouveau vol (décollage à une date ultérieure) ainsi que son retour. L'aéroport de départ, destination ainsi que la date et l'heure seront donnée en arguments. (L'assignation des équipages se fera ultérieurement).
 
 
 
