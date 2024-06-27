@@ -1,6 +1,15 @@
-# Présentation
+# DB AIRLINE
 
 Ce dépôt contient la base de données d'une compagnie aérienne fictive où sont stockées les données utiles à ses activités opérationnelles. Elle a pour but de vous entrainer au requêtage SQL.
+
+## Table des Matières
+
+- [Requêtes](#requêtes)
+- [Jointures](#jointures)
+- [Sous-requêtes](#sous-requêtes)
+- [Vues](#vues)
+- [Triggers](#triggers)
+- [Procédures stockées](#procédures-stockées)
 
 ![image](https://github.com/ornech/DB_airline/assets/101867500/115efdc3-0f13-4a47-a8f6-b4ea70e2fe0d)
 
