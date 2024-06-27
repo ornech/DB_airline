@@ -4,13 +4,6 @@ Ce dépôt contient la base de données d'une compagnie aérienne fictive où so
 
 ## Table des Matières
 
-- [Requêtes](#requêtes)
-- [Jointures](#jointures)
-- [Sous-requêtes](#sous-requêtes)
-- [Vues](#vues)
-- [Triggers](#triggers)
-- [Procédures stockées](#procédures-stockées)
-
 ![image](https://github.com/ornech/DB_airline/assets/101867500/115efdc3-0f13-4a47-a8f6-b4ea70e2fe0d)
 
 La compagnie aérienne fictive en question réalise quotidiennement plusieurs rotations au départ de Paris à destination de :
