@@ -1,6 +1,6 @@
 # Script de gestion des bases de données pour les étudiants
 
-Ce script permet de générer des bases de données spécifiques pour chaque étudiant à partir d'un fichier CSV. Il crée également les utilisateurs associés et génère un script Bash pour importer une base de données standardisée dans chaque base créée.
+Ce script permet de générer des bases de données spécifiques pour chaque étudiant à partir d'un export Pronote (fichier CSV) d'une liste d'élèves. Il crée également les utilisateurs associés et génère un script Bash pour importer une base de données standardisée dans chaque base créée.
 
 ---
 
