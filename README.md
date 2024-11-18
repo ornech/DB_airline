@@ -33,8 +33,8 @@ Heure arrivée: 14:31
 - IP (SIO2): 172.16.255.10
 
 - user :
-  - Pour les SIO1: Votre prénom sans accent  et avec la première lettre du prénom en majuscule
-  - Pour les SIO2: "SIO2-" suivi de votre prénom sans accent et avec la première lettre du prénom en majuscule
+  - Pour les SIO1: Votre nom sans accent et la première lettre du prénom en minuscule
+  - Pour les SIO2 : "SIO2-" suivi de votre nom (en minuscules, sans accent), puis de la première lettre de votre prénom (également en minuscule, sans accent).
 - mot de passe: votre date de naissance au format JJMMAAAA
 
   Pour les SIO1, vous possédez une base de données commune avec des droits limités au SELECT.
