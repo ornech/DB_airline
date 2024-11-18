@@ -1,5 +1,6 @@
 import csv
 import unidecode
+import os
 
 # Fonction pour extraire et formater les informations à partir du CSV
 def extraire_donnees_csv(nom_fichier):
@@ -44,13 +45,45 @@ def extraire_donnees_csv(nom_fichier):
 # Nom du fichier CSV (ajustez le chemin si nécessaire)
 nom_fichier_csv = 'chemin/vers/le/fichier.csv'
 
+# URL du fichier SQL à télécharger
+url_fichier_sql = "http://example.com/path/to/data.sql"
+
 # Récupérer les étudiants depuis le CSV
 etudiants = extraire_donnees_csv(nom_fichier_csv)
 
-# Générer les commandes SQL
-for etudiant in etudiants:
-    print(f"CREATE DATABASE IF NOT EXISTS airline_{etudiant[1]};")
-    print(f"CREATE USER IF NOT EXISTS 'SIO2-{etudiant[1]}@'%' IDENTIFIED BY '{etudiant[2]}';")
-    print(f"GRANT SELECT, DROP, INSERT, UPDATE, EXECUTE, ALTER, CREATE, TRIGGER, ALTER ROUTINE, CREATE ROUTINE, SHOW VIEW ON airline_{etudiant[1]}.* TO 'SIO2-{etudiant[1]}@'%';")
+# Fichiers de sortie
+fichier_sql = "create_databases_and_users.sql"
+fichier_bash = "import_databases.sh"
 
-print("FLUSH PRIVILEGES;")
+# Ouvrir les fichiers en mode écriture
+with open(fichier_sql, 'w') as f_sql, open(fichier_bash, 'w') as f_bash:
+    # Créer les commandes SQL pour chaque étudiant
+    for etudiant in etudiants:
+        login = etudiant[1]
+        date_naissance = etudiant[2]
+        base = f"airline_{login}"
+
+        # Générer les commandes SQL et les écrire dans le fichier SQL
+        f_sql.write(f"CREATE DATABASE IF NOT EXISTS {base};\n")
+        f_sql.write(f"CREATE USER IF NOT EXISTS 'SIO2-{login}'@'%' IDENTIFIED BY '{date_naissance}';\n")
+        f_sql.write(f"GRANT SELECT, DROP, INSERT, UPDATE, EXECUTE, ALTER, CREATE, TRIGGER, ALTER ROUTINE, CREATE ROUTINE, SHOW VIEW ON {base}.* TO 'SIO2-{login}'@'%';\n\n")
+    
+    # Générer le flush des privilèges
+    f_sql.write("FLUSH PRIVILEGES;\n")
+
+    # Créer le script Bash pour télécharger et importer le fichier SQL
+    f_bash.write("#!/bin/bash\n\n")
+    f_bash.write(f"curl -o /tmp/data.sql {url_fichier_sql}\n\n")
+
+    # Ajouter les commandes d'importation dans le fichier bash
+    for etudiant in etudiants:
+        login = etudiant[1]
+        base = f"airline_{login}"
+
+        # Générer les commandes d'importation et les écrire dans le fichier Bash
+        f_bash.write(f"mysql -u root -p {base} < /tmp/data.sql\n")
+
+    # Rendre le script Bash exécutable
+    os.chmod(fichier_bash, 0o755)
+
+print(f"Fichiers générés : {fichier_sql} et {fichier_bash}")
