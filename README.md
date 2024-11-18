@@ -76,8 +76,8 @@ Heure arrivée: 14:31
 
 
 1. Affichez pour le vol de votre choix, la liste des passagers (N° de vol, Nom, Prénom et date de naissance du passager).
-2. Pour le vol de votre choix, affichez le CDB et le N° de vol.
-3. Pour le vol de votre choix, affichez l'immatriculation de l'avion utilisé et la ville de destination
+2. Pour le vol de votre choix, affichez l'immatriculation de l'avion utilisé et la ville de destination
+3. Pour le vol de votre choix, affichez le CDB et le N° de vol.
 4. Pour le vol de votre choix, affichez le numéro du siège (1B par exemple) et le nom du passager
 5. Pour le vol de votre choix quels sont les sièges inoccupés ?
 6. Affichez les passagers qui n'ont pas volé.
