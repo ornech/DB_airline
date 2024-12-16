@@ -114,6 +114,7 @@ Heure arrivée: 14:31
 
 1. Lorsqu'un employé (pilote ou membre d'équipage) est affecté à un vol, mettre à jour sa disponibilité (status 1=engagé, 0=disponible).
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
+3. Lorsqu'un vol est enregistré ou modifié, il faut vérifier que l'avion est disponible sur ce créneau horaire.
 
 ## Exercices "Procédures stockées"
 > ℹ️ Pour vous aider  
