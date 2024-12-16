@@ -112,7 +112,7 @@ Heure arrivée: 14:31
 > https://mariadb.com/kb/en/signal/  
 > Pour les erreurs personnalisées, le SQLSTATE recommandé est « 45000 ».  
 
-1. Ajoutez un trigger (Trigger_Update_Billet) sur la table Billets. Ce trigger doit vérifier si le siège modifié est disponible. Si c'est le cas le changement est enregistré. Si ce n'est pas le cas, ce trigger doit déclencher un erreur (SIGNAL)
+1. Lorsqu'un employé (pilote ou membre d'équipage) est affecté à un vol, mettre à jour sa disponibilité (status 1=engagé, 0=disponible).
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
 
 ## Exercices "Procédures stockées"
