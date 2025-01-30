@@ -82,23 +82,6 @@ Heure arrivée: 14:31
 5. Pour le vol de votre choix quels sont les sièges inoccupés ?
 6. Affichez les passagers qui n'ont pas volé.
 
-## Exercices "sous-requêtes"
-> ℹ️ Pour vous aider  
-> https://mariadb.com/kb/en/subqueries-scalar-subqueries/  
-> https://mariadb.com/kb/en/subqueries-row-subqueries/  
-> https://mariadb.com/kb/en/subqueries-in-a-from-clause/  
-> https://mariadb.com/kb/en/in/  
-
-1. Affichez le ou les pilotes (CDB ou OPL) qui ont effectué le plus grand nombre de vols en décembre 2023.
-2. Pour le vol de votre choix, affichez le nombre de passagers en classe Business.
-3. Calculez le nombre moyen de passagers par vol à destination de Rome.
-5. Déterminez le nombre moyen de vols d’un naviguant.
-6. Trouvez les 5 employés les plus sollicités (ayant le plus de vols à leur actif)
-7. Quel est le temps de vol moyen des équipages pour le mois de Février ?
-8. Déterminez le taux de remplissage des 3 lignes
-9. Affichez les vols avec un nombre de passagers supérieur à la moyenne
-10. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
-
 ## Exercices "Vues"
 > ℹ️ Pour vous aider
 > https://mariadb.com/kb/en/create-view/
@@ -115,6 +98,23 @@ Heure arrivée: 14:31
 1. Lorsqu'un employé (pilote ou membre d'équipage) est affecté à un vol, mettre à jour sa disponibilité (status 1=engagé, 0=disponible).
 2. Ajoutez un Trigger (Trigger_Create_Flight) à la table Flights. Ce trigger doit générer une erreur si le vols programmés n'a pas d'équipage
 3. Lorsqu'un vol est enregistré ou modifié, il faut vérifier que l'avion est disponible sur ce créneau horaire.
+
+## Exercices "sous-requêtes"
+> ℹ️ Pour vous aider  
+> https://mariadb.com/kb/en/subqueries-scalar-subqueries/  
+> https://mariadb.com/kb/en/subqueries-row-subqueries/  
+> https://mariadb.com/kb/en/subqueries-in-a-from-clause/  
+> https://mariadb.com/kb/en/in/  
+
+1. Affichez le ou les pilotes (CDB ou OPL) qui ont effectué le plus grand nombre de vols en décembre 2023.
+2. Pour le vol de votre choix, affichez le nombre de passagers en classe Business.
+3. Calculez le nombre moyen de passagers par vol à destination de Rome.
+5. Déterminez le nombre moyen de vols d’un naviguant.
+6. Trouvez les 5 employés les plus sollicités (ayant le plus de vols à leur actif)
+7. Quel est le temps de vol moyen des équipages pour le mois de Février ?
+8. Déterminez le taux de remplissage des 3 lignes
+9. Affichez les vols avec un nombre de passagers supérieur à la moyenne
+10. Déterminez la tranche d’âge moyenne des passagers qui ont voyagé en classe Business à destination de Zurich
 
 ## Exercices "Procédures stockées"
 > ℹ️ Pour vous aider  
